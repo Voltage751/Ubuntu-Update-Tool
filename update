@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Ubuntu/Debian Update Tool (Version 1.0)
+# Ubuntu/Debian Update Tool (Version 1.1)
 # Command to fully update the system: "update". (June, 2020)
 # By Voltage (GNU/General Public License version 3.0)
 
@@ -24,7 +24,7 @@ set -e
 update() {
 
 echo -e "${LIGHTGREEN}Starting system update...${RESET}"
-sudo apt-get update | sudo apt-get upgrade | sudo apt-get full-upgrade | sudo apt-get dist-upgrade | sudo apt-get autoremove | sudo apt-get autoclean 
+sudo apt-get update ; sudo apt-get upgrade ; sudo apt-get full-upgrade ; sudo apt-get dist-upgrade ; sudo apt-get autoremove ; sudo apt-get autoclean 
 
 }
 
@@ -51,7 +51,7 @@ echo -e "\n${TURQUOISE}By Voltage (GNU/General Public License version 3.0 ${RESE
 
 # What is this tool:
 
-echo -e "\n${LIGHTBLUE}Ubuntu/Debian Auto-Update (Version 1.0)${RESET}\n\n"
+echo -e "\n${LIGHTBLUE}Ubuntu/Debian Auto-Update (Version 1.1)${RESET}\n\n"
 
 # Help
 
